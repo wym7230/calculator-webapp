@@ -1,0 +1,37 @@
+.button {
+  font-size: 20px;
+  overflow: hidden;
+  text-align: center;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border: none;
+  box-shadow: inset 1px 1px 0 0 #e3e7e9;
+}
+.button:focus {
+  outline: none;
+}
+.button:active {
+  background: black;
+  color: white;
+}
+
+.myButton:hover {
+  background-color: #ffffff;
+}
+
+.light {
+  background-color: white;
+  color: grey;
+}
+
+.orange {
+  background-color: orange;
+  color: white;
+}
+
+.grey {
+  background-color: rgb(199, 199, 199);
+  color: white;
+}

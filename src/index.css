@@ -1,0 +1,19 @@
+.frame {
+  margin: auto;
+  width: 300px;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.f1 {
+  flex: 1;
+}
+.f2 {
+  flex: 2;
+}
+.f3 {
+  flex: 3;
+}
+.f7 {
+  flex: 7;
+}

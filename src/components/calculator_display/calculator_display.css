@@ -1,0 +1,15 @@
+.display {
+  background-color: #e4e4e4;
+  color: grey;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.display-cell {
+  font-size: 20px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: auto;
+}
