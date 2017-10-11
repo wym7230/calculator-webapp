@@ -7,6 +7,23 @@ class InputPanel extends Component {
     const { onButtonPressed } = this.props;
     return (
       <div className="buttonPanel f7 d-flex flex-row">
+        <div className="f1 d-flex flex-column">
+          <Button value="π" grey onButtonPressed={onButtonPressed}>
+            π
+          </Button>
+          <Button value="e" grey onButtonPressed={onButtonPressed}>
+            e
+          </Button>
+          <Button value="sin" grey onButtonPressed={onButtonPressed}>
+            sin
+          </Button>
+          <Button value="√" grey onButtonPressed={onButtonPressed}>
+            √
+          </Button>
+          <Button value="²" grey onButtonPressed={onButtonPressed}>
+            ²
+          </Button>
+        </div>
         <div className="f3 d-flex flex-column">
           <div className="f1 d-flex flex-row">
             <Button value="C" grey onButtonPressed={onButtonPressed}>
