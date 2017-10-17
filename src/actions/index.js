@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _ from "lodash";
 
 export const APPEND_VALUE = "APPEND_VALUE";
 export const EQUAL_OPERATION = "EQUAL_OPERATION";
@@ -18,7 +18,7 @@ export const onButtonPressed = symbol => {
     let currentNumber;
     if (!_.isUndefined(operandMap[current])) {
       currentNumber = operandMap[current];
-    }else {
+    } else {
       currentNumber = parseFloat(current);
     }
 
@@ -30,9 +30,7 @@ export const onButtonPressed = symbol => {
         });
         break;
       case "±":
-        payload = `${currentNumber < 0
-          ? Math.abs(currentNumber)
-          : -currentNumber}`;
+        payload = `${-currentNumber}`;
         dispatchResultToReducer(dispatch, APPEND_VALUE, payload);
         break;
       case "%":
@@ -44,7 +42,7 @@ export const onButtonPressed = symbol => {
         dispatchResultToReducer(dispatch, EQUAL_OPERATION, payload);
         break;
       case "√":
-        payload = `${Math.sin(currentNumber)}`;
+        payload = `${Math.sqrt(currentNumber)}`;
         dispatchResultToReducer(dispatch, EQUAL_OPERATION, payload);
         break;
       case "²":
